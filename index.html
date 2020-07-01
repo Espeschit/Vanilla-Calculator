@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <script src="assets/scripts/index.js" defer type="module"></script>
+</head>
+<body>
+    <div id="calcBody" class="calcBody">
+        <span class="popup" id="popup">Can't start with 0</span>
+        <p id="number" class="display">0</p>
+        <div class="keys">
+            <div id='funNum' class="fun-num">
+                <button id='allClear' class='button fun' data-action="clearAll">AC</button>
+                <button id='clearEntry' class='button fun' data-action="clearOne">CE</button>
+                <button id='divide' class='button fun' data-action="divide">÷</button>
+                <button id='plus' class='button fun' data-action="add">+</button>
+
+                <button id='dot' class='button fun' data-action="decimal">.</button>
+                <button id='minus' class='button fun' data-action="subtract">-</button>
+                <button id='times' class='button fun' data-action="multiply">x</button>
+                <button id='equal' class='button fun' data-action="calculate">=</button>
+            </div>
+            <div id='bottomNum' class="bottom-nums">
+                <button id='seven' class='button num'>7</button>
+                <button id='eight' class='button num'>8</button>
+                <button id='nine' class='button num'>9</button>
+                <button id='four' class='button num'>4</button>
+                <button id='five' class='button num'>5</button>
+
+                <button id='six' class='button num'>6</button>
+                <button id='one' class='button num'>1</button>
+                <button id='two' class='button num'>2</button>
+                <button id='three' class='button num'>3</button>
+                <button id='zero' class='button num'>0</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

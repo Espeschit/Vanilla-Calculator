@@ -1,0 +1,149 @@
+body {
+    background-color: #31a29e;
+    font-family: 'Mukta', sans-serif;
+}
+
+.calcBody {
+    background-color: black;
+    color:pink;
+    position: relative;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.popup {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 91%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.hide {
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1;}
+  }
+
+  @-webkit-keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+  
+  @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity:0;}
+  }
+
+.keys {
+    padding: 15px;
+    margin: 1px;
+}
+
+.display {
+    font-size: 60px;
+    overflow-wrap: break-word;
+    position: relative;
+    left: 3%;
+}
+
+.fun-num {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bottom-nums {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15%;
+}
+
+.button {
+    height: 45px;
+    width: 18%;
+    line-height: 1px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline:none;
+}
+
+.num {
+    background-color: #c87822;
+    margin-left: 4%;
+}
+
+.num:disabled {
+    background-color: #555;
+}
+
+.fun {
+    background-color: #9e2020;
+    margin-left: 11px;
+}
+
+
+@media (min-width: 600px) {
+    .calcBody {
+        width: 300px;
+        left: calc(50% - 150px);
+    }
+}
+
+@media all and (max-width: 480px) { 
+    .button {
+        height: 66px;
+        width: 19%;
+        font-size: 20px;
+    }
+    .calcBody {
+        margin-top: -5px;
+    }
+}
