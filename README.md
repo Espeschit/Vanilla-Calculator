@@ -1,5 +1,5 @@
 # Vanilla-Calculator
-Simple Calculator built with Vanilla JS
+Calculator built with Vanilla JS
 
 ### Some Technologies used:
 * Vanilla JS
